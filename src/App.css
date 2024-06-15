@@ -1,38 +1,321 @@
-.App {
+    
+/************ Default Css ************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  background-color: #f4e5d6 !important;
+  color: #fff !important;
+  font-family: 'Centra', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+p, a, li, button, ul {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+
+/* @media (min-width:1700px) {
+	main .container {
+		max-width: 100%;
+		padding: 0 150px;
+	}
+} */
+
+p.success {
+	color: green;
+}
+
+p.danger {
+	color: red;
+}
+/************ Navbar Css ************/
+nav.navbar {
+  padding: 18px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  transition:  0.32s ease-in-out;
+  background-color: #fff;
+}
+nav.navbar.scrolled {
+  padding: 0px 0;
+  background-color: #121212;
+}
+nav.navbar a.navbar-brand {
+    width: 9%;
+}
+nav.navbar .navbar-nav .nav-link.navbar-link {
+  font-weight: 600;
+  color: #523314 !important;
+  letter-spacing: 0.8px;
+  padding: 0 25px;
+  font-size: 18px;
+  opacity: 0.75;
+}
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
+nav.navbar .navbar-nav a.nav-link.navbar-link.active {
+    opacity: 1;
+}
+
+
+.container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-logo{
+  padding: 0;
+  height: 50px;
+  width: 100px;
+}
+
+
+/***************Home css******************/
+.home{
+  /* width:100%;
+  height:600px; */
+  margin-top: 0;
+  padding: 200px 0 90px 0;
+  background-image: url('../public/images/1-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content{
+  height: 300px;
+  width:500px;
+  margin-left: 50px;
+  background-color: #fff;
+}
+
+.heading{
   text-align: center;
+  padding:50px 30px;
+  color:black;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tagline{
+  text-align: center;
+  padding:50px 0;
+  color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/*********************About************************/
+
+.about{
+  padding: 100px 0 100px 0;
+  position: relative;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.about-img{
+  height: 400px;
+  width: 200px;
+  background-image: url("../public/images/3-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img{
+  height: 400px;
+  width: 200px;
+
+}
+
+.heading-about{
+  text-align: center;
+  padding:50px 0;
+  color: black;
+}
+
+.info{
+  text-align: center;
+  padding: 50px 100px;
+  color: black;
+}
+
+.content-about{
+  height: 400px;
+  width:900px;
+  margin-left: 50px;
+  background-color: #fff;
+}
+
+.divider{
+  /* border-color: #c07830; */
+  background-color: #c07830;
+  /* color: #c07830; */
+  height: 5px;
+  /* width: 200px; */
+  width:50%;
+  text-align:center;
+  margin: center;
+}
+
+/**********************Login Css***************************/
+
+#login{
+  padding: 0 0 50px 0;;
+}
+
+#card-img1{
+  height:200px;
+  width:200px;
+  border-radius: 100%;
+}
+
+#div-img{
+  text-align: center;
+  padding:50px 20px;
+}
+
+#cards{
+  margin-left: 30px;
+}
+
+.login-cards{
+  display: flex;
+  align-items: center;
+}
+
+.login-heading{
+  text-align: center;
+  padding:50px 0;
+  color: black;
+}
+
+#login-button{
+  background-color:#c07830 ;
+color:white;
+border:none;
+}
+
+/*******************Services Css***********************/
+
+#services{
+  padding: 0 0 50px 0;
+  background-color: #fff;
+}
+
+.service-cards{
+  display: flex;
+  align-items: center;
+}
+
+.services-heading{
+  text-align: center;
+  padding:50px 0;
+  color: black;
+}
+
+#service-img{
+  height:200px;
+}
+
+#service-card{
+  height: 300px;
+}
+
+#cards1{
+  margin: 0 50px;
+}
+
+/***********************Footer Css*********************/
+.footer-box{
+  background-color: #523314 ;
+  padding:50px 0 50px 0;
+  display: flex;
+  align-items:center ;
+  justify-content: space-evenly;
+}
+
+ .company{
+  padding-top: 10px;
+} 
+
+#footer-links{
+  text-decoration: none;
+  color: #fff;
+}
+
+.contact{
+  text-decoration: none;
+  padding-top: 20px;
+}
+
+.footer-logo{
+  padding: 10px;
+  margin: 0 300px 0 0;
+  height:100px;
+  width: 150px;
+}
+#footer-links1{
+  padding-top:10px;
+  
+}
+
+/******************************AllLogin************************/
+
+.AllLogin{
+  height: 100vh;
+  width: 100%;
+  color: black;
+  background-color: #f4e5d6;
+}
+
+.AllLogin-content{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 9px;
+  width: 100%;
+  margin-top: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+.AllLogin-heading{
+  margin: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
