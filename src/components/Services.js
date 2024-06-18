@@ -6,6 +6,7 @@ export const Services=()=>{
             <div className="services">
             <div  >
                 <h1 className="services-heading">Services</h1>
+                <div id="divider-services"></div>
             </div>
             <Container>
                 <Row>

@@ -1,16 +1,22 @@
 import { Button, Card, Col, Container, Row } from "react-bootstrap"
-import {Link} from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 export const Login=()=>{
     const navigate = useNavigate()
-    const gotToNewPage=()=>{
-        navigate("/login");
+    const gotToNewPageUser=()=>{
+        navigate("/user-login");
+      }
+    const gotToNewPageAdmin=()=>{
+        navigate("/admin-login");
+      }
+    const gotToNewPageSuperAdmin=()=>{
+        navigate("/superadmin-login");
       }
     return(
         <section id="login">
             <div  >
                 <h1 className="login-heading">LOGIN</h1>
+                <div id="divider-login"></div>
             </div>
             
             <Container>
@@ -23,7 +29,7 @@ export const Login=()=>{
                             </div>
                             <Card.Body>
                                 <div className="d-grid">
-                                <Button id="login-button">Admin</Button>
+                                <Button onClick={() => gotToNewPageAdmin()} id="login-button">Admin</Button>
                                 </div>
                             </Card.Body>
                         </Card>
@@ -35,7 +41,7 @@ export const Login=()=>{
                             </div>
                             <Card.Body>
                                 <div className="d-grid">
-                                    <Button id="login-button">Admin</Button>
+                                    <Button onClick={() => gotToNewPageSuperAdmin()} id="login-button">Super Admin</Button>
                                 </div>
                             </Card.Body>
                         </Card>
@@ -47,7 +53,7 @@ export const Login=()=>{
                             </div>
                             <Card.Body>
                                 <div className="d-grid">
-                                    <Button onClick={() => gotToNewPage()} id="login-button">Users</Button>
+                                    <Button onClick={() => gotToNewPageUser()} id="login-button">Users</Button>
                                 </div>
                             </Card.Body>
                         </Card>

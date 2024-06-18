@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from 'react-bootstrap';
-import { Link } from "react-router-dom";
+
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -31,7 +31,7 @@ export const NavBar = () => {
             <Container className="container">
                 <div>
                 <Navbar.Brand href="#home" >
-                    <img className="nav-logo" src="images/logo.png" alt="logo"></img>
+                    <img id="nav-logo" src="images/logo.png" alt="logo"></img>
                 </Navbar.Brand>
                 </div>
                 <div>

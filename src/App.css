@@ -65,6 +65,8 @@ p.success {
 p.danger {
 	color: red;
 }
+
+
 /************ Navbar Css ************/
 nav.navbar {
   padding: 18px 0;
@@ -101,7 +103,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   justify-content: space-between;
 }
 
-.nav-logo{
+#nav-logo{
   padding: 0;
   height: 50px;
   width: 100px;
@@ -138,6 +140,14 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   text-align: center;
   padding:50px 0;
   color: black;
+}
+
+#divider-home{
+  width:200px;
+  height:5px;
+  background-color: #c07830;
+  border-color: #c07830;
+  margin-left: 152px;
 }
 
 
@@ -184,15 +194,13 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   background-color: #fff;
 }
 
-.divider{
-  /* border-color: #c07830; */
+
+#divider{
+  width:525px;
+  height:5px;
   background-color: #c07830;
-  /* color: #c07830; */
-  height: 5px;
-  /* width: 200px; */
-  width:50%;
-  text-align:center;
-  margin: center;
+  border-color: #c07830;
+  margin-left: 200px;
 }
 
 /**********************Login Css***************************/
@@ -223,7 +231,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 
 .login-heading{
   text-align: center;
-  padding:50px 0;
+  padding:30px 0;
   color: black;
 }
 
@@ -231,6 +239,15 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   background-color:#c07830 ;
 color:white;
 border:none;
+}
+
+#divider-login{
+  width:300px;
+  height:5px;
+  background-color: #c07830;
+  border-color: #c07830;
+  margin-left: 620px;
+  margin-bottom: 50px;
 }
 
 /*******************Services Css***********************/
@@ -247,7 +264,7 @@ border:none;
 
 .services-heading{
   text-align: center;
-  padding:50px 0;
+  padding:30px 0;
   color: black;
 }
 
@@ -261,6 +278,15 @@ border:none;
 
 #cards1{
   margin: 0 50px;
+}
+
+#divider-services{
+  width:400px;
+  height:5px;
+  background-color: #c07830;
+  border-color: #c07830;
+  margin-left: 580px;
+  margin-bottom: 50px;
 }
 
 /***********************Footer Css*********************/
@@ -319,3 +345,124 @@ border:none;
   margin: 30px;
 }
 
+#AllLogin-element input{
+  border-color: #fff;
+  border-radius: 10px;
+  width:300px;
+}
+
+.login-button{
+  padding: 8px;
+  border-radius: 10px;
+  width: 300px;
+  background-color: #c07830;
+  color: #fff;
+}
+
+
+/*******************component's navbar*****************/
+
+.nav-dropdown{
+  margin-left:500px ;
+}
+
+#searchbar{
+  margin-left: 500px;
+}
+
+#search-button{
+  color: #523314;
+  border-color: #523314;
+}
+
+#search-button:hover{
+  color: #fff;
+  background-color: #523314;
+}
+
+/*************************SuperAdminBody***********************/
+
+.sa-body{
+  margin-top:180px;
+}
+
+#SA-section{
+  margin: 0;
+  height:200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #fff;
+  color: #121212;
+}
+
+#sa-element{
+  margin:50px;
+}
+
+#view-button{
+  padding:10px 80px;
+  border-radius: 50px;
+  background-color: #233358;
+  border-color: #233358;
+  color: #fff;
+}
+
+
+
+/************************User body **********************/
+.UserUploads{
+  margin-top: 150px;
+  position: relative;
+}
+
+.user-heading{
+  color:black;
+  position: absolute;
+  left:40%;
+}
+
+/***********************Admin Css*********************/
+
+.admin-card{
+  max-width: 100%;
+  display: flex;
+}
+
+.FillDetails{
+    color: black;
+    margin:150px 100px ;
+    background-color: #fff;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .FillDetails-heading{
+  padding-bottom: 10px;
+ } 
+
+#FillDeatils-button{
+  width:40%;
+  background-color: #c07830;
+  color: #fff;
+  padding: 10px 80px;
+  border-radius: 50px;
+}
+
+.party-card{
+  padding: 50px 100px;
+  background-color: #fff;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#card-body{
+  margin: 0 100px 100px 100px;
+  padding:30px 0;
+
+}

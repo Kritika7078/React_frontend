@@ -9,7 +9,7 @@ export const About=()=>{
             </div >
             <div className="content-about">
             <h1 className="heading-about" >About Us</h1>
-            <hr className="divider"/>
+            <div id="divider"></div>
             {/* <Divider variant="middle" style={{borderColor:"#c07830",borderWidth:"3px",width:"200px"}} flexItem  /> */}
             <div class="line headers-text-separator"></div>
             <p className="info"  >At our platform, we offer a unique digital locker experience for users, 
