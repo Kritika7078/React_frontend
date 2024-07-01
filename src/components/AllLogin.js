@@ -39,7 +39,7 @@ export const AllLogin=()=>{
             {/* <input type='checkbox' id='remember'/> */}
             {/* <label htmlFor='remember' > Remember Me</label> */}
             </div>
-            <div id="AllLogin-element"><button className="login-button" onClick={()=>{
+            <div id="AllLogin-element"><button type="submit" className="login-button" onClick={()=>{
                 if(path === '/user-login'){
                     gotToNewPageUser();
                 }
