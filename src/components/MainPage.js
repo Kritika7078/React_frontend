@@ -12,7 +12,7 @@ export const MainPage=()=> {
         <NavBar />
         <Home />
         <About />
-        <Login />  
+        {/* <Login />   */}
         <Services />
         <Footer/>
       </div>

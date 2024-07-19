@@ -76,6 +76,7 @@ nav.navbar {
   z-index: 9999;
   transition:  0.32s ease-in-out;
   background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 nav.navbar.scrolled {
   padding: 0px 0;
@@ -109,6 +110,27 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   width: 100px;
 }
 
+.nav-dropdown {
+  margin-left: 0px;
+}
+
+#N{
+
+  color: #523314 !important;
+ 
+  
+ 
+}
+
+
+#navbarScrollingDropdown{
+  font-weight: 600;
+  color: #523314 !important;
+  letter-spacing: 0.8px;
+  padding: 0 25px;
+  font-size: 18px;
+  opacity: 0.75;
+}
 
 /***************Home css******************/
 .home{
@@ -123,6 +145,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 
 .content{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 300px;
   width:500px;
   margin-left: 50px;
@@ -167,6 +190,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   background-image: url("../public/images/3-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .img{
@@ -188,6 +212,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 
 .content-about{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 400px;
   width:900px;
   margin-left: 50px;
@@ -258,6 +283,7 @@ border:none;
 }
 
 .service-cards{
+   
   display: flex;
   align-items: center;
 }
@@ -268,12 +294,25 @@ border:none;
   color: black;
 }
 
+#service-heading{
+  color: #fff;
+}
+
 #service-img{
-  height:200px;
+  height:300px;
 }
 
 #service-card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 300px;
+}
+
+#service-intro{
+  height: 60px;
+  position :absolute;
+  background: rgba(27,27,27,0.5);
+  transition: 0.5s;
+  transition-timing-function: ease;
 }
 
 #cards1{
@@ -289,9 +328,33 @@ border:none;
   margin-bottom: 50px;
 }
 
+#service-content{
+  opacity:0;
+  visibility: hidden;
+  color: #fff;
+}
+
+#service-card:hover #service-intro {
+  height:100px;
+  bottom:90px;
+}
+
+#service-card:hover #service-content{
+  opacity:1;
+  visibility: visible;
+}
+
+#service-card:hover #service-img,#service-card{
+  transform: scale(1.1);
+}
+
+
 /***********************Footer Css*********************/
+
+
 .footer-box{
   background-color: #523314 ;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding:50px 0 50px 0;
   display: flex;
   align-items:center ;
@@ -333,17 +396,18 @@ border:none;
 }
 
 .AllLogin-content{
+  padding-top: 200px;
   border-radius: 8px;
   background-color: #f4e5d6;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
+  gap: 18px;
   width: 500px;
   padding: 80px 100px 100px 100px;
   position: relative;
   left: 33%;
-  top: 1%;
+  top: 15%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -370,7 +434,7 @@ border:none;
 /*******************component's navbar*****************/
 
 .nav-dropdown{
-  margin-left:500px ;
+  margin-left:0px ;
 }
 
 #searchbar{
@@ -441,6 +505,7 @@ border:none;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  }
 
  .FillDetails-heading{
@@ -454,6 +519,8 @@ border:none;
   padding: 10px 80px;
   border-radius: 50px;
 }
+
+/*******************Card css*******************/
 
 .party-card{
   /* display: inline-block;
@@ -469,6 +536,16 @@ border:none;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+}
+
+.party-card h1{
+  padding-bottom: 20px;
+}
+
+.party-card label{
+  font-size: 20px;
 }
 
 .dynamic-div{
@@ -483,9 +560,70 @@ border:none;
 .party-card input{
   border-radius: 10px;
   padding:3px 10px ;
-  
+  border-color: 0.01px black;
 }
 
 .party-card label{
   padding:5px 10px ;
+}
+
+/*************************REGISTER CSS*****************************/
+.dropzone{
+  margin-top: 20px;
+  padding: 25px;
+  text-align: center;
+  border:2px dashed ;
+  border-color:#c07830
+}
+
+.dropzone button{
+  background-color: #c07830;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.AllRegister{
+  /* height: 100vh;
+  width: 100%; */
+  color: black;
+  background-color: #fff;
+}
+
+.AllRegister-content{
+  height: 100vh;
+  /* padding-top: 200px; */
+  border-radius: 8px;
+  background-color: #f4e5d6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 500px;
+  padding: 50px 100px 100px 100px;
+  position: relative;
+  
+  left: 35%;
+  top: 10%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.AllRegister-heading{
+  padding-top: 0;
+  padding-bottom: 30px;
+}
+
+#AllRegister-element input{
+  border-color: #fff;
+  border-radius: 10px;
+  width:300px;
+}
+
+.Register-button{
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 300px;
+  background-color: #c07830;
+  color: #fff;
 }

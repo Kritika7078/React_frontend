@@ -8,14 +8,14 @@ export const AllLogin=()=>{
     console.log(path)
     const navigate = useNavigate()
     const gotToNewPageUser=()=>{
-        navigate("/user-login/user");
+        navigate("/login-user/user");
       }
     const gotToNewPageAdmin=()=>{
-        navigate("/admin-login/admin");
+        navigate("/login-notary/notary");
       }
-    const gotToNewPageSuperAdmin=()=>{
-        navigate("/superadmin-login/superadmin");
-      }
+    // const gotToNewPageSuperAdmin=()=>{
+    //     navigate("/login-superadmin/superadmin");
+    //   }
 
       const [loginData,setLoginData]=useState(
             {username:"",email:"",password:""}
@@ -61,19 +61,19 @@ export const AllLogin=()=>{
             {/* <label htmlFor='remember' > Remember Me</label> */}
             </div>
             <div id="AllLogin-element"><button type="submit" className="login-button" onClick={(e)=>{
-                if(path === '/user-login'){
-                    //handleSubmit(e)
+                if(path === '/login-user'){
+                    handleSubmit(e)
                     gotToNewPageUser();
                 }
-                else if(path === '/admin-login'){
-                    //handleSubmit(e)
+                else if(path === '/login-notary'){
+                    handleSubmit(e)
                     gotToNewPageAdmin();
                 } 
-                else if(path === '/superadmin-login'){
-                    //handleSubmit(e)
-                    gotToNewPageSuperAdmin();
+                // else if(path === '/login-superadmin'){
+                //     handleSubmit(e)
+                //     gotToNewPageSuperAdmin();
                     
-                }
+                // }
             }}>Login</button>
             </div>
             </form>

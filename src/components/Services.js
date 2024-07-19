@@ -16,9 +16,9 @@ export const Services=()=>{
                            
                             <Card.Img id="service-img" src="images/8.jpg"/>
                           
-                            <Card.Body>
-                               <Card.Title>Customizable User Accounts</Card.Title>
-                               <Card.Text>Differentiated access for admin and super admin with unique functionalities</Card.Text>
+                            <Card.Body id="service-intro">
+                               <Card.Title id="service-heading">Customizable User Accounts</Card.Title>
+                               <Card.Text id="service-content">Differentiated access for admin and super admin with unique functionalities</Card.Text>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -27,9 +27,9 @@ export const Services=()=>{
                             
                             <Card.Img id="service-img" src="images/9.jpg"/>
                         
-                            <Card.Body>
-                               <Card.Title>Easy Access Anywhere</Card.Title>
-                               <Card.Text>Retrieve your data from your digital locker anytime, anywhere</Card.Text>
+                            <Card.Body id="service-intro" >
+                               <Card.Title id="service-heading">Easy Access Anywhere</Card.Title>
+                               <Card.Text id="service-content">Retrieve your data from your digital locker anytime, anywhere</Card.Text>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -38,9 +38,9 @@ export const Services=()=>{
                             
                             <Card.Img id="service-img" src="images/7.jpg"/>
                             
-                            <Card.Body>
-                               <Card.Title>Secure Data Storage</Card.Title>
-                               <Card.Text>Safely store your digital data with advanced encryption</Card.Text>
+                            <Card.Body id="service-intro">
+                               <Card.Title id="service-heading">Secure Data Storage</Card.Title>
+                               <Card.Text id="service-content">Safely store your digital data with advanced encryption</Card.Text>
                             </Card.Body>
                         </Card>
                     </Col>
