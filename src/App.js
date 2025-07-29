@@ -23,7 +23,6 @@ function App() {
           <Route path="/register-notary" element={<Register/>} />
           <Route path="/login-user" element={<AllLogin/>} />
           <Route path="/login-notary" element={<AllLogin/>} />
-        
           <Route path="/login-user/user" element={<User/>} />
           <Route path="/login-notary/notary" element={<Admin/>} />
      
